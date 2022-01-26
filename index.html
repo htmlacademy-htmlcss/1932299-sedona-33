@@ -37,9 +37,12 @@
     </nav>
   </header>
   <main class="main-index">
-    <h1 class="visually-hidden">Седона</h1>
-    <img class="logo" src="#" alt="welcome to the gorgeous SEDONA Because the Grand Canyon sucks">
-    <section class="advantages">Седона-не большой городок в Аризоне, заслуживающий большего!
+    <div>
+      <h1 class="visually-hidden">Седона</h1>
+      <img class src="#" alt="welcome to the gorgeous SEDONA Because the Grand Canyon sucks">
+    </div>
+    <section class="advantages">
+      <p>Седона-не большой городок в Аризоне, заслуживающий большего!</p>
       <h2 class="visually-hidden">Рассмотрим 5 причин, по которым Седона лучше, чем Гранд-Каньон!</h2>
       <ul class="advantages-list">
         <li class="advantages-item">
@@ -47,18 +50,16 @@
           <p class="advantages-description">Седона — не аттракцион для туристов, там течёт
             своя жизнь</p>
         </li>
-        <li class="advantages-item">
+        <li>
           <h3 class="advantages-title">Жилье</h3>
           <p class="advantages-description">Рекомендуем пожить
             в настоящем мотеле,
             всё как в кино!</p>
-        </li>
-        <li class="advantages-item">
+
           <h3 class="advantages-title">Еда</h3>
           <p class="advantages-description">Всегда заказывайте
             топовый фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li class="advantages-item">
+
           <h3 class="advantages-title">Сувениры</h3>
           <p class="advantages-description">Не только китайского,
             но и настоящего местного производства!</p>
@@ -81,12 +82,52 @@
         </li>
       </ul>
     </section>
-    <section class="advantages"Заинтересовались?>
+    <section class="advantages">
+      <h2 class="appointment-title">Заинтересовались?</h2>
       <p class="Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне">
       </p>
-      <form class="appointment-form" action=""></form>
+      <a class="button button-all" href="#">Поиск гостинницы в Седоне</a>
+    </section>
+    <section class="advantages">
+      <h3 class="advantages-title">Подпишитесь на рассылку</h3>
+      <p>Только полезная информация и никакого спама,
+        честное бойскаутское!</p>
+      <form class="apportment-form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="field" placeholder="e-mail" type="email">
+        <button class="button" type="submit">Подписаться</button>
+      </form>
     </section>
   </main>
+  <footer class="page-footer">
+    <section class="footer-social">
+      <h2 class="page-footer-title">Социальные сети</h2>
+      <ul class="social-list">
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-contacts">
+      <a class="contacts-phone" href="tel:88128121212">8 (812) 812-12-12</a>
+    </section>
+    <section class="logo">
+      <h2 class="page-footer-title">
+        <a class="button" href="https://htmlacademy.ru/">.html academy</a>
+      </h2>
+    </section>
+  </footer>
 </body>
 
 </html>
