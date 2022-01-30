@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
+
 <body>
   <header>
     <nav class="navigation">
@@ -25,34 +26,91 @@
         <a class="navigation-user" href="#">
           <span class="visually-hidden">Поиск</span>
         </a>
-      </div>
-      <div>
         <a class="navigation-link" href="#">
           <span class="visually-hidden">Избранное</span>
         </a>
-      </div>
-      <div>
         <a class="navigation-link" href="#">Хочу сюда
         </a>
       </div>
     </nav>
   </header>
   <main class="main-inner">
-    <header class="inner-header">
-    <h1 class="inner-header-title"Туристический городок-Седона>
-    </h1>
-  <h3 class="advantages-title">Подпишитесь на рассылку</h3>
-  <p>Только полезная информация и никакого спама,
-    честное бойскаутское!</p>
-  <form class="apportment-form" action="https://echo.htmlacademy.ru/" method="post">
-    <label for="email-field"></label>
-    <input class="field" placeholder="e-mail" id="email-field">
-    <button class="button" type="submit">Подписаться</button>
-  </form>
-</main>
-<header class="inner-header">
-<h1 class="inner-header-title">Гостинницы Седоны</h1>
-</header>
+    <h1 class="inner-header-title">Гостинницы Седоны</h1>
+    <form
+    class="catalog-filter"
+    action="https://echo.htmlacademy.ru"
+    method="get">
+    <fieldset class="catalog-filter infastructure">
+      <legend class="infrastructure-name">Инфраструктура</legend>
+      <ul>
+        <li>
+          <label class="infrastructure name chekbox">
+            <input
+            class="chekbox"
+            type="checkbox"
+            name="swinning-pool"
+            checked/>
+            Бассейн
+          </label>
+        </li>
+        <li>
+          <label class="infrastructure name chekbox">
+            <input
+            class="chekbox"
+            type="checkbox"
+            name="parking"
+            checked/>
+            Парковка
+          </label>
+        </li>
+        <li>
+          <label class="infrastructure name chekbox">
+            <input
+            class="chekbox"
+            type="checkbox"
+            name="wi-fi"/>
+            Wi-Fi
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset class="catalog-filter type housing">
+      <legend class="type-housing-name">Тип жилья</legend>
+      <ul class="type-housing-list">
+        <li class="type-housing-elements">
+          <label class="radio-type-housing">
+            <input class="radio" type="radio" name="hotel" checked/>
+            Отель
+          </label>
+        </li>
+        <li class="type-housing-elements">
+          <label class="radio-type-housing">
+            <input class="radio" type="radio" name="motel"/>
+            Мотель
+          </label>
+        </li>
+        <li class="type-housing-elements">
+          <label class="radio-type-housing">
+            <input class="radio" type="radio" name="apartments"/>
+            Апартаменты
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+      </form>
+    <section class="advantages">
+      <h3 class="advantages-title">Подпишитесь на рассылку</h3>
+      <p>Только полезная информация и никакого спама,
+        честное бойскаутское!</p>
+      <form class="apportment-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="email-field"></label>
+        <input class="field" placeholder="e-mail" id="email-field">
+        <button class="button" type="submit">Подписаться</button>
+      </form>
+    </section>
+  </main>
+
   <footer class="page-footer">
     <ul class="social-list">
       <li class="footer-social-item">
@@ -76,4 +134,5 @@
     <a href="https://htmlacademy.ru/"><img src="#" alt=".html academy"></a>
   </footer>
 </body>
+
 </html>
