@@ -66,52 +66,51 @@
         <ul class="type-housing-list">
           <li class="type-housing-elements">
             <label class="radio-type-housing">
-              <input class="radio" type="radio" name="hotel" checked />
+              <input class="radio" type="radio" name="type" value="hotel" checked />
               Отель
             </label>
           </li>
           <li class="type-housing-elements">
             <label class="radio-type-housing">
-              <input class="radio" type="radio" name="motel" />
+              <input class="radio" type="radio" name="type" value="motel" />
               Мотель
             </label>
           </li>
           <li class="type-housing-elements">
             <label class="radio-type-housing">
-              <input class="radio" type="radio" name="apartments" />
+              <input class="radio" type="radio" name="type" value="apartment" />
               Апартаменты
             </label>
           </li>
         </ul>
       </fieldset>
-      <br>
-      <br>
+
       <input type="submit" value="Применить">
-      <br>
-      <br>
-      <input type="submit" value="Сбросить">
+      <input type="reset" value="Сбросить">
     </form>
-    <p> Найдено гостинниц:38
-      <select class="select-control" aria-label="Сортировка">
-        <option value="cheap">Сначала дешевые</option>
-        <option value="expensive">Сначала дорогие</option>
-        <option value="popular">Сначала популярные</option>
-      </select>
-      <a href="#" class="button">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a href="#" class="button">
-        <span class="visually-hidden">Показать </span>
-      </a><a href="#" class="button">
-        <span class="visually-hidden">Показать список</span>
-      </a>
+    <p> Найдено гостинниц:38</p>
+    <select class="select-control" aria-label="Сортировка">
+      <option value="cheap">Сначала дешевые</option>
+      <option value="expensive">Сначала дорогие</option>
+      <option value="popular">Сначала популярные</option>
+    </select>
+    <a href="#" class="button">
+      <span class="visually-hidden">Показать карточки</span>
+    </a>
+    <a href="#" class="button">
+      <span class="visually-hidden">Показать по одной</span>
+    </a><a href="#" class="button">
+      <span class="visually-hidden">Показать список</span>
+    </a>
     <ul class="catalog-list">
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
           <img class="hotel-card-image" src="#" alt="Amara Resort & Spa">
           <h3 class="hotel-card-title">Amara Resort & Spa</h3>
         </a>
-        <b class="hotel-card-prise">Гостинница от 4000 Р</b>
+        <b class="hotel-card-prise">
+          <span>Гостинница</span>
+          <span>от 4000 Р</span></b>
         <a class="button" href="#">подробнее
         </a>
         <a class="button" href="#">в избранное</a>
@@ -121,7 +120,9 @@
           <img class="hotel-card-image" src="#" alt="Desert Quail Inn">
           <h3 class="hotel-card-title">Desert Quail Inn</h3>
         </a>
-        <b class="hotel-card-prise">Гостинница от 3000 Р</b>
+        <b class="hotel-card-prise">
+        <span>Гостинница</span>
+        </span>от 3000 Р</span></b>
         <a class="button" href="#">подробнее
         </a>
         <a class="button" href="#">в избранное</a>
@@ -131,7 +132,9 @@
           <img class="hotel-card-image" src="#" alt="Villias at Poco Diablo">
           <h3 class="hotel-card-title">Villias at Poco Diablo</h3>
         </a>
-        <b class="hotel-card-prise">Гостинница от 2000 Р</b>
+        <b class="hotel-card-prise">
+          <span>Гостинница</span>
+          <span> от 2000 Р</span></b>
         <a class="button" href="#">подробнее
         </a>
         <a class="button" href="#">в избранное</a>
@@ -143,7 +146,9 @@
           <img class="hotel-card-image" src="#" alt="GreenTree Inn">
           <h3 class="hotel-card-title">GreenTree Inn</h3>
         </a>
-        <b class="hotel-card-prise">Гостинница от 3000 Р</b>
+        <b class="hotel-card-prise">
+        <span>Гостинница</span>
+      <span>от 3000 Р</span></b>
         <a class="button" href="#">подробнее
         </a>
         <a class="button" href="#">в избранное</a>
