@@ -16,8 +16,9 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
   color: #242424;
   background-color: #fbf7f4;
 }
@@ -58,13 +59,13 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-causes{
+.advantages-causes {
   font-size: 22px;
-line-height: 36px;
+  line-height: 36px;
   text-align: center;
 }
 
-.advantages-list{
+.advantages-list {
   text-align: center;
 }
 
@@ -81,19 +82,17 @@ line-height: 36px;
 }
 
 .appointment-title {
-  font-weight: bold;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.appointment-button{
-  font-weight: bold;
-font-size: 20px;
-line-height: 36px;
-text-align: center;
-text-transform: uppercase;
+.appointment-button {
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 p {
@@ -110,9 +109,9 @@ p {
   text-transform: uppercase;
 }
 
-.page-footer-phone-link{
+.page-footer-phone-link {
   font-size: 40px;
-line-height: 40px;
-text-align: center;
-text-transform: uppercase;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
 }
