@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url ("fonts/pt-sans-regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,14 +10,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url ("fonts/pt-sans-bold.woff2") format("woff2");
   font-display: swap;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 21px;
   font-weight: bold;
   color: #242424;
   background-color: #fbf7f4;
@@ -73,6 +73,15 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.features-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -95,14 +104,7 @@ body {
   text-transform: uppercase;
 }
 
-p {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-}
-
 .mailing-list-title {
-  font-weight: bold;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
