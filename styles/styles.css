@@ -84,6 +84,59 @@ body {
   text-align: center;
 }
 
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block-1 {
+  width: 400px;
+  height: 384px;
+  background: #83B3D3;
+}
+
+.block-2{
+  width: 400px;
+  height: 384px;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.block-3 {
+  width: 400px;
+  height: 384px;
+  background: #FFFFFF;
+}
+
+.block-4 {
+  width: 400px;
+  height: 384px;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.block-5 {
+  width: 400px;
+  height: 384px;
+  background: #83B3D3;
+}
+
+.block-6 {
+  width: 400px;
+  height: 384px;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.block-7 {
+  width: 400px;
+  height: 384px;
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.block-8 {
+  width: 400px;
+  height: 384px;
+  background: rgba(131, 179, 211, 0.12);
+}
+
 .appointment-title {
   font-size: 30px;
   line-height: 36px;
