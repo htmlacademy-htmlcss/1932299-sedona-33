@@ -16,6 +16,7 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -115,6 +116,8 @@ body {
 }
 
 .appointment-button {
+  font-style: normal;
+  font-weight: normal;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
@@ -135,8 +138,6 @@ body {
   text-transform: uppercase;
 }
 
-
-
 .intro-inner {
   background-image: url("../images/catalog-background.jpg");
   background-size: 100% auto;
@@ -144,13 +145,35 @@ body {
 }
 
 .inner-header-title {
+  font-style: normal;
   font-size: 60px;
   line-height: 78px;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .catalog-filter {
   font-size: 18px;
   line-height: 23px;
+  color: #FFFFFF;
+}
+
+.infrastructure-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.type-housing-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
   color: #FFFFFF;
 }
 
@@ -163,11 +186,32 @@ body {
   background-color:#ffffff;
 }
 
+.hotel-card-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.hotel-card-prise {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
 .pagination {
   background-color:#FFFFFF;
 }
 
 .pagination-link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
   color:#ffffff;
   background-color: #83B3D3;
 }
