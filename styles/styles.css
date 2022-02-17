@@ -20,7 +20,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  background-color: #fbf7f4;
+  background-color: #F2F2F2;
 }
 
 .navigation-link {
@@ -33,7 +33,7 @@ body {
 }
 
 .intro {
-  background-image: url("images/index-background.jpg");
+  background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -138,7 +138,7 @@ body {
 
 
 .intro-inner {
-  background-image: url("images/catalog-background.jpg");
+  background-image: url("../images/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
