@@ -46,9 +46,9 @@ body {
 .reasons-text {
   font-size: 30px;
   line-height: 36px;
-  font-style: normal;
   font-weight: 400;
   text-align: center;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -109,6 +109,7 @@ body {
 }
 
 .appointment-title {
+  font-weight: 400;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -116,8 +117,7 @@ body {
 }
 
 .appointment-button {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
@@ -125,6 +125,7 @@ body {
 }
 
 .mailing-list-title {
+  font-weight: 400;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -136,6 +137,7 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .intro-inner {
@@ -145,33 +147,33 @@ body {
 }
 
 .inner-header-title {
-  font-style: normal;
+  font-weight: 400;
   font-size: 60px;
   line-height: 78px;
 }
 
 .breadcrumbs-item {
+  font-weight: 700;
   font-size: 16px;
   line-height: 21px;
 }
 
 .catalog-filter {
+  font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
 }
 
 .infrastructure-name {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
 }
 
 .type-housing-name {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
@@ -187,15 +189,14 @@ body {
 }
 
 .hotel-card-title {
-  font-weight: bold;
+  font-weight: 400;
   font-size: 24px;
   line-height: 31px;
   color: #000000;
 }
 
-.hotel-card-prise {
-  font-style: normal;
-  font-weight: normal;
+.hotel-card-price {
+  font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -206,8 +207,7 @@ body {
 }
 
 .pagination-link {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
