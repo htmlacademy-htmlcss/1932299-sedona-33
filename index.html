@@ -10,44 +10,50 @@
 <body>
   <header>
     <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="">Главная</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="">О Седоне</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="catalog">Гостиницы</a>
-        </li>
-      </ul>
-      <div>
-        <a class="navigation-search" href="">
-          <span class="visually-hidden">Поиск.</span>
-        </a>
-        <a class="navigation-favorites" href="#">
-          <span class="visually-hidden">Избранное.</span>
-        </a>
-        <a class="navigation-maps" href="#">Хочу сюда
-        </a>
-      </div>
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-logo" src="images/logo-1.svg" width="139" height="70" alt="Логотип">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog">Гостиницы</a>
+          </li>
+        </ul>
+        <div class="menu">
+          <a class="navigation-search" href="">
+            <span class="visually-hidden">Поиск.</span>
+          </a>
+          <a class="navigation-favorites" href="#">
+            <span class="visually-hidden">Избранное.</span>
+          </a>
+          <a class="navigation-maps" href="#">Хочу сюда
+          </a>
+        </div>
     </nav>
   </header>
-  <main class="main-index">
-    <section class="intro">
-      <h1 class="visually-hidden">Туристический городок-Седона.</h1>
-      <img class="intro-image" src="images/welcome.svg" width="458" height="352"
-        alt="welcome to the gorgeous SEDONA Because the Grand Canyon sucks">
-    </section>
+  <main class="main-container main-index">
+    <div class="page-container">
+      <section class="intro">
+        <h1 class="visually-hidden">Туристический городок-Седона.</h1>
+        <img class="intro-image" src="images/welcome.svg" width="458" height="352"
+          alt="welcome to the gorgeous SEDONA Because the Grand Canyon sucks">
+      </section>
+    </div>
     <section class="reasons">
       <h2 class="visually-hidden">Причины.</h2>
       <p class="reasons-text">Седона-не большой городок в Аризоне, заслуживающий большего!</p>
       <p class="reasons-causes">Рассмотрим 5 причин, по которым Седона лучше, чем Гранд-Каньон!</p>
       <ul class="reasons-list">
-        <li class="reasons-item-reasons-item-city">
+        <li class="reasons-item reasons-item-city">
+          <div class="city">
           <h3 class="reasons-title">Настоящий городок</h3>
           <span class="reasons-number">- №1 -</span>
           <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
           <img src="images/photo-1.jpg" width="800" height="384" alt="Архитектура города.">
           <ul class="advantages-list">
             <li class="advantages-item">
@@ -66,21 +72,23 @@
         </li>
         <li class="reasons-item reasons-item-bridge">
           <img src="images/photo-2.jpg" width="800" height="384" alt="Каньоны.">
+          <div class="bridge">
           <h3 class="reasons-title">Там есть мост дьявола</h3>
           <span class="reasons-number">- №2 -</span>
           <p class="reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </div>
         </li>
-        <li class="reasons-item-reasons-item-square">
+        <li class="reasons-item-reasons item-square">
           <h3 class="reasons-title">Небольшая площадь</h3>
           <span class="reasons-number">- №3 -</span>
           <p class="reasons-description">Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="reasons-item-reasons-item-road">
+        <li class="reasons-item reasons-item-road">
           <h3 class="reasons-title">Красивая дорога</h3>
           <span class="reasons-number">- №4 -</span>
           <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="reasons-item-reasons-item-tourists">
+        <li class="reasons-item reasons-item-tourists">
           <h3 class="reasons-title">Мало туристов</h3>
           <span class="reasons-number">- №5 -</span>
           <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>

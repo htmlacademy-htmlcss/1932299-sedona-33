@@ -14,7 +14,14 @@
   font-display: swap;
 }
 
+.html{
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -22,6 +29,27 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #F2F2F2;
+  width: 1200px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1060 px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  display: flex;
+  width: 345;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  width: 264;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -33,6 +61,20 @@ body {
   text-decoration: none;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.intro-image {
+  display: block;
+  margin: 0 auto;
+}
+
 .intro {
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
@@ -41,6 +83,23 @@ body {
 
 .reasons {
   text-align: center;
+}
+
+.reasons-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.reasons-item {
+  width: 400px;
+}
+
+.advantages-item {
+  width: 400px;
 }
 
 .reasons-text {
