@@ -19,7 +19,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   font-family: "PT Sans", sans-serif;
@@ -29,15 +29,15 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #F2F2F2;
-  width: 1200px;
 }
 
 .page-container {
-  min-height: 100%;
   display: flex;
+  min-height: 100%;
   flex-direction: column;
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff
 }
 
 .main-container {
@@ -46,8 +46,6 @@ body {
 
 .navigation {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
 }
 
 .navigation-list {
@@ -55,6 +53,7 @@ body {
   width: 345;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .menu {
@@ -89,9 +88,7 @@ body {
 
 .reasons-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -113,30 +110,26 @@ body {
 
 .reasons-list {
   text-align: center;
+  list-style: none;
+}
+
+.reasons-item {
+  display: flex;
 }
 
 .city {
   width: 400px;
-  height: 384px;
+  background-color: #83B3D3;
+}
+
+.reasons-item-city {
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffffff;
 }
 
 .bridge {
   width: 400px;
-  height: 384px;
-}
-
-.reasons-item-city {
-  color: #ffffff;
-  background-color: #83B3D3;
-}
-
-.advantages-title {
-  width: 400px;
-  height: 384px;
-}
-
-.advantages-item {
-  background-color:rgba(131, 179, 211, 0.12);
 }
 
 .reasons-item-bridge {
@@ -147,19 +140,16 @@ body {
 .reasons-item-square {
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
-  height: 384px;
 }
 
 .reasons-item-road {
   background: rgba(131, 179, 211, 0.2);
   width: 400px;
-  height: 384px;
 }
 
 .reasons-item-tourists {
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
-  height: 384px;
 }
 
 .reasons-title {
@@ -168,6 +158,11 @@ body {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .advantages-title {
@@ -180,6 +175,12 @@ body {
 
 .advantages-description{
   text-align: center;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .appointment-title {
@@ -198,12 +199,29 @@ body {
   text-transform: uppercase;
 }
 
+.mailing-list  {
+  background-image: url("../images/background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
 .mailing-list-title {
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.page-footer-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.footer-social-item {
+  width: 107px;
+  margin-left: 61;
 }
 
 .page-footer-phone-link {
