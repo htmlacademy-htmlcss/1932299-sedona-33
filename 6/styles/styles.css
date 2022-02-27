@@ -219,9 +219,20 @@ body {
   margin: 0 auto;
 }
 
-.footer-social-item {
+.social-list {
+  display: flex;
   width: 107px;
-  margin-left: 61;
+  list-style: none;
+}
+
+.footer-social-item {
+  margin-left: auto;
+  margin-left: 61px;
+}
+
+.page-footer-logo {
+  margin-left: auto;
+  max-width: 115px;
 }
 
 .page-footer-phone-link {
@@ -311,4 +322,34 @@ body {
 .pagination-current {
   color:#000000;
   background-color:#F2F2F2;
+}
+
+.page-footer-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.social-list {
+  display: flex;
+  width: 107px;
+  list-style: none;
+}
+
+.footer-social-item {
+  margin-left: auto;
+  margin-left: 61px;
+}
+
+.page-footer-logo {
+  margin-left: auto;
+  max-width: 115px;
+}
+
+.page-footer-phone-link {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
