@@ -50,7 +50,7 @@
             <a class="breadcrumbs-link" href="#">Гостиницы</a>
           </li>
         </ul>
-        <section class="catalog-filter">
+        <section class="catalog">
           <h2 class="visually-hidden">Фильтры.</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="catalog-filter-infastructure">
@@ -76,7 +76,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter type housing">
+            <fieldset class="catalog-filter type-housing">
               <legend class="type-housing-name">Тип жилья</legend>
               <ul class="type-housing-list">
                 <li class="type-housing-elements">
@@ -99,12 +99,12 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
-              <legend class="infrastructure-name">Стоимость, Р:</legend>
-              <input type="number-1">
-              <label class="field" placeholder="0"></label>
-              <input type="number-2">
-              <label class="field" placeholder="1000"></label>
+            <fieldset class="catalog-filter field-price">
+              <legend class="price">Стоимость, Р:</legend>
+              <input class="type-number-1">
+              <label class="from"></label>
+              <input class="type-number-2">
+              <label class="before"></label>
             </fieldset>
             <div class="buttons">
               <input type="submit" value="Применить">
@@ -121,12 +121,14 @@
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
-          <a href="#" class="button-cards">
-            <span class="visually-hidden">Показать карточки.</span></a>
-          <a href="#" class="button-one">
-            <span class="visually-hidden">Показать по одной.</span></a>
-          <a href="#" class="button-list">
-            <span class="visually-hidden">Показать список.</span></a>
+          <div class="show">
+            <a href="#" class="button-cards">
+              <span class="visually-hidden">Показать карточки.</span></a>
+            <a href="#" class="button-one">
+              <span class="visually-hidden">Показать по одной.</span></a>
+            <a href="#" class="button-list">
+              <span class="visually-hidden">Показать список.</span></a>
+          </div>
         </div>
         <ul class="catalog-list">
           <li class="hotel-card">
@@ -195,8 +197,8 @@
           </li>
         </ul>
         <button class="button-load-more" type="submit">загрузить ещё</button>
-        <ul class="pagination">
-          <div class="pagination-list">
+        <div class="pagination">
+          <ul class="pagination-list">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
             </li>
@@ -215,14 +217,15 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
             </li>
+            <label class="number">Гостинниц на странице:</label>
             <select class="select-control" aria-label="Нумерация">
               <option value="first">1</option>
               <option value="second">2</option>
               <option value="third">3</option>
-              <option value="fourth fourth-current">4</option>
+              <option value="fourth">4</option>
             </select>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </section>
       <section class="mailing-list-inner">
         <h3 class="mailing-list-title">Подпишитесь на рассылку</h3>
@@ -236,7 +239,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer-container">
-        <ul class="social-list">
+        <ul class="footer-social">
           <li class="footer-social-item">
             <a class="button-twitter" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Твиттер.</span>
@@ -253,8 +256,9 @@
             </a>
           </li>
         </ul>
-        <a href="tel:88128121212">8 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru/"> <img src="images/logo-2.svg" alt=".html academy"></a>
+        <a class="page-footer-phone-link" href="tel:88128121212">8 (812) 812-12-12</a>
+        <a class="page-footer-logo" href="https://htmlacademy.ru/"> <img src="images/logo-2.svg"
+            alt=".html academy"></a>
       </div>
     </footer>
   </div>
