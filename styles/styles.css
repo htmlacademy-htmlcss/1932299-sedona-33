@@ -94,19 +94,19 @@ body {
 .intro-image {
   display: block;
   margin: 0 auto;
-  padding-top: 51px;
-  padding-bottom: 25px;
-
 }
 
 .intro {
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-top: 51px;
+  padding-bottom: 25px;
 }
 
 .reasons {
   text-align: center;
+  padding-top: 63px;
 }
 
 .reasons-list {
@@ -117,7 +117,7 @@ body {
 }
 
 .reasons-text {
-  margin-top: 63px;
+  margin: 0 auto;
   margin-bottom: 31px;
   font-size: 30px;
   line-height: 36px;
@@ -140,6 +140,9 @@ body {
 
 .city {
   width: 400px;
+  margin: 0 auto;
+  padding-top: 97px;
+  padding-bottom: 87px;
   background-color: #83B3D3;
 }
 
@@ -151,6 +154,9 @@ body {
 
 .bridge {
   width: 400px;
+  margin: 0 auto;
+  padding-top: 97px;
+  padding-bottom: 87px;
 }
 
 .reasons-item-bridge {
@@ -160,22 +166,31 @@ body {
 }
 
 .reasons-item-square {
+  margin: 0 auto;
+  padding-top: 97px;
+  padding-bottom: 87px;
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
 }
 
 .reasons-item-road {
+  margin: 0 auto;
+  padding-top: 97px;
+  padding-bottom: 87px;
   background: rgba(131, 179, 211, 0.2);
   width: 400px;
 }
 
 .reasons-item-tourists {
+  margin: 0 auto;
+  padding-top: 97px;
+  padding-bottom: 87px;
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
 }
 
 .reasons-title {
-  margin-top: 97px;
+  margin: 0 auto;
   margin-bottom: 30px;
   font-size: 24px;
   line-height: 28px;
@@ -187,6 +202,9 @@ body {
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
+  margin: 0 auto;
+  padding-top: 97px;
+  padding-bottom: 87px;
 }
 
 .advantages-title {
@@ -208,7 +226,7 @@ body {
 }
 
 .appointment-title {
-  margin-top: 91px;
+  margin: 0 auto;
   margin-bottom: 29px;
   font-weight: 400;
   font-size: 30px;
@@ -218,13 +236,16 @@ body {
 }
 
 .appointment {
+  margin: 0 auto;
   text-align: center;
+  padding-top: 91px;
+  padding-bottom: 93px;
 }
 
 .appointment-button {
   display: flex;
-  margin: 71px 313px 108px 312px ;
-  padding: 15px 0px 15px 0px;
+  margin: 0 auto;
+  margin-top: 56px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -234,9 +255,8 @@ body {
 
 .mailing-list  {
   display: block;
-  margin: 0 auto;
   padding-top: 94px;
-  padding-bottom: 93px;
+  padding-bottom: 94px;
   background-image: url("../images/background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -244,16 +264,22 @@ body {
 
 .mailing-list-title {
   font-weight: 400;
+  margin: 0 auto;
+  margin-bottom: 29px;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.page-footer-container {
+.mailing-list-form {
+  margin-top: 46px;
+}
+
+.page-footer {
   display: flex;
-  margin: 0 auto;
-  padding: 40px 72px;
+  margin: 0;
+  padding: 40px 72px 30px 72px;
 }
 
 .footer-social {
