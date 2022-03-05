@@ -127,7 +127,19 @@ body {
   text-transform: uppercase;
 }
 
+.reasons-number {
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.reasons-description {
+  margin: 0;
+}
+
 .reasons-causes {
+  margin: 0;
+  margin-bottom: 80px;
   font-size: 22px;
   line-height: 36px;
   text-align: center;
@@ -139,10 +151,10 @@ body {
 }
 
 .city {
+  box-sizing: border-box;
   width: 400px;
   margin: 0 auto;
-  padding-top: 97px;
-  padding-bottom: 87px;
+  padding: 97px 90px 87px 90px;
   background-color: #83B3D3;
 }
 
@@ -153,10 +165,10 @@ body {
 }
 
 .bridge {
+  box-sizing: border-box;
   width: 400px;
   margin: 0 auto;
-  padding-top: 97px;
-  padding-bottom: 87px;
+  padding: 97px  90px 87px 90px;
 }
 
 .reasons-item-bridge {
@@ -166,25 +178,25 @@ body {
 }
 
 .reasons-item-square {
+  box-sizing: border-box;
   margin: 0 auto;
-  padding-top: 97px;
-  padding-bottom: 87px;
+  padding:97px  90px 87px 90px;
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
 }
 
 .reasons-item-road {
+  box-sizing: border-box;
   margin: 0 auto;
-  padding-top: 97px;
-  padding-bottom: 87px;
+  padding: 97px  90px 87px 90px;
   background: rgba(131, 179, 211, 0.2);
   width: 400px;
 }
 
 .reasons-item-tourists {
+  box-sizing: border-box;
   margin: 0 auto;
-  padding-top: 97px;
-  padding-bottom: 87px;
+  padding: 97px  90px 87px 90px;
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
 }
@@ -200,11 +212,11 @@ body {
 }
 
 .advantages-item {
+  box-sizing: border-box;
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   margin: 0 auto;
-  padding-top: 97px;
-  padding-bottom: 87px;
+  padding:97px  90px 87px 90px;
 }
 
 .advantages-title {
@@ -245,12 +257,17 @@ body {
 .appointment-button {
   display: flex;
   margin: 0 auto;
-  margin-top: 56px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.appointment-dates {
+  margin: 0 auto;
+  margin-bottom: 46px;
+  text-align: center;
 }
 
 .mailing-list  {
@@ -272,8 +289,10 @@ body {
   text-transform: uppercase;
 }
 
-.mailing-list-form {
-  margin-top: 46px;
+.mailing-information {
+  margin: 0 auto;
+  margin-bottom: 46px;
+  text-align: center;
 }
 
 .page-footer {
@@ -324,12 +343,17 @@ background-color: #F2F2F2;
 }
 
 .intro-inner {
+  box-sizing:border-box;
+  margin: 0 auto;
+  padding: 35px 72px 83px 71px;
   background-image: url("../images/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .inner-header-title {
+  margin: 0 auto;
+  margin-bottom: 5px;
   font-weight: 400;
   font-size: 60px;
   line-height: 78px;
@@ -339,6 +363,14 @@ background-color: #F2F2F2;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  padding: 0;
+  list-style: none;
 }
 
 .catalog-filter {
@@ -374,8 +406,16 @@ background-color: #F2F2F2;
 
 .sorting-container {
   display: flex;
+  margin: 0 auto;
+  padding-top: 44px;
+  padding-bottom: 53px;
   color: #333333;
   background-color:#ffffff;
+}
+
+.sorting-container .button {
+  width: 48px;
+  height: 48px;
 }
 
 .hotel-card-title {
@@ -392,25 +432,51 @@ background-color: #F2F2F2;
   color: #333333;
 }
 
-.pagination {
+.pagination-container {
   display: flex;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 73px;
+  list-style: none;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .pagination-link {
+  display: block;
+  width: 55px;
+  height: 55px;
   font-weight: 400;
-  font-size: 20px;
   line-height: 26px;
   text-align: center;
-  text-transform: uppercase;
+  text-decoration: none;
   color:#ffffff;
   background-color: #83B3D3;
+}
+
+.hotel-selection {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-left: 299px;
+  width: 386px;
+  padding-top: 3px;
+  padding-bottom: 4px;
 }
 
 .pagination-item {
   display: flex;
   width: 55px;
   margin-left: 8px;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .select-control {
@@ -421,4 +487,21 @@ background-color: #F2F2F2;
 .pagination-current {
   color:#000000;
   background-color:#F2F2F2;
+}
+
+.mailing-list-inner {
+  display: flex;
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 73px;
+  padding-bottom: 140px;
+  align-items: center;
+  background-color: #ffffff
+}
+
+.mailing-information-inner {
+  margin: 0 auto;
+  margin-bottom: 46px;
+  text-align: center;
 }
