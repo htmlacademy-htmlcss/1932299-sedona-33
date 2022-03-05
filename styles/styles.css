@@ -220,6 +220,8 @@ body {
 }
 
 .advantages-title {
+  margin: 0 auto;
+  margin-bottom: 20px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -228,6 +230,7 @@ body {
 }
 
 .advantages-description{
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -293,6 +296,10 @@ body {
   margin: 0 auto;
   margin-bottom: 46px;
   text-align: center;
+}
+
+.mailing-list-form {
+  width: 800px;
 }
 
 .page-footer {
@@ -434,6 +441,7 @@ background-color: #F2F2F2;
 
 .pagination-container {
   display: flex;
+  display: block;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 73px;
@@ -492,7 +500,6 @@ background-color: #F2F2F2;
 .mailing-list-inner {
   display: flex;
   display: block;
-  width: 800px;
   margin: 0 auto;
   padding-top: 73px;
   padding-bottom: 140px;
