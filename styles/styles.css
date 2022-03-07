@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-400.woff2")format("woff2");
+  src: url("../fonts/ptsans-400.woff2")format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-700.woff2")format("woff2");
+  src: url("../fonts/ptsans-700.woff2")format("woff2");
   font-display: swap;
 }
 
@@ -220,6 +220,8 @@ body {
 }
 
 .advantages-title {
+  margin: 0 auto;
+  margin-bottom: 20px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -228,6 +230,7 @@ body {
 }
 
 .advantages-description{
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -293,6 +296,10 @@ body {
   margin: 0 auto;
   margin-bottom: 46px;
   text-align: center;
+}
+
+.mailing-list-form {
+  width: 800px;
 }
 
 .page-footer {
@@ -418,7 +425,33 @@ background-color: #F2F2F2;
   height: 48px;
 }
 
+.catalog-list {
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  row-gap: 10px;
+  column-gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 34px;
+}
+
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.hotel-card-image {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
 .hotel-card-title {
+  margin: 0;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 24px;
   line-height: 31px;
@@ -426,14 +459,43 @@ background-color: #F2F2F2;
 }
 
 .hotel-card-price {
+  margin: 0;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
 }
 
+.button-more {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 133px;
+  background-color: #756257;
+}
+
+.button-favorites {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 140px;
+  background-color: #83B3D3;
+}
+
+.button-load-more {
+  display: flex;
+  display: block;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 620px;
+  background-color: #83B3D3;
+}
+
 .pagination-container {
   display: flex;
+  display: block;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 73px;
@@ -492,7 +554,6 @@ background-color: #F2F2F2;
 .mailing-list-inner {
   display: flex;
   display: block;
-  width: 800px;
   margin: 0 auto;
   padding-top: 73px;
   padding-bottom: 140px;
