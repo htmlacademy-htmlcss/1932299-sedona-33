@@ -74,8 +74,9 @@ body {
 
 .menu {
   display: flex;
+  padding: 14px 0;
   margin-left: auto;
-  align-self: center;
+  align-self: start;
 }
 
 .navigation-search {
@@ -89,6 +90,7 @@ body {
 }
 
 .navigation-favorites {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,6 +98,17 @@ body {
   width: 42px;
   margin: 0;
   padding: 0;
+}
+
+.navigation-favorites-likes {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 24px;
+  top: 15px;
+  background-color: #7DB54F;
+  border-radius: 10px;
+  z-index: 1;
 }
 
 .navigation-maps {
@@ -122,6 +135,16 @@ body {
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation-link-current::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  left: 15px;
+  height: 2px;
+  background-color: #756257;
 }
 
 .intro-image {
@@ -254,6 +277,18 @@ body {
   list-style: none;
 }
 
+.advantages-item:nth-child(1n) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 1)
+}
+
+.advantages-item:nth-child(3n) {
+  background-color: rgba(131, 179, 211, 0.12)
+}
+
 .advantages-title {
   position: relative;
   margin: 0 auto;
@@ -279,21 +314,18 @@ body {
 }
 
 .advantages-housing.advantages-title::before {
-  background-image: url("..//images/icon/icon-1.svg");
+  background-image: url("../images/icon/icon-1.svg");
   background-repeat: no-repeat;
-  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-food.advantages-title::before {
-  background-image: url("..//images/icon/icon-2.svg");
+  background-image: url("../images/icon/icon-2.svg");
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 1)
 }
 
 .advantages-souvenirs.advantages-title::before {
-  background-image: url("..//images/icon/icon-3.svg");
+  background-image: url("../images/icon/icon-3.svg");
   background-repeat: no-repeat;
-  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-description {
@@ -328,9 +360,10 @@ body {
 
 .appointment-button {
   display: flex;
+  box-sizing: border-box;
   margin: 0 auto;
+  padding: 15px;
   width: 575px;
-  height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -396,9 +429,12 @@ body {
 
 .field {
   display: block;
+  font: inherit;
+  border: none;
   width: 600px;
   height: 60px;
   border-radius: 10px 0px 0px 10px;
+  background-color: #F2F2F2;
 }
 
 .mailing-list-button {
@@ -429,11 +465,19 @@ body {
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 107px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer-social-item {
+  margin-right: 23px;
+  margin-bottom: 18px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .page-footer-phone-link {
@@ -545,6 +589,7 @@ body {
 
 .sorting-container {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding-top: 44px;
   padding-bottom: 53px;
@@ -552,9 +597,51 @@ body {
   background-color: #ffffff;
 }
 
-.sorting-container .button {
+.select-control {
+  width: 287px;
+  height: 48px;
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.sorting-type {
+  display: block;
+  margin: 0 auto;
+  margin-right: 81px;
+  margin-left: 192px;
+  padding: 0;
+}
+
+.show {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.card-grid-toggle {
+  display: flex;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.card-grid-toggle svg {
+  fill: #000000;
+}
+
+.card-grid-toggle:nth-child(2n) {
+  border: 2px solid #E6E6E6;
+}
+
+.card-grid-toggle:nth-child(3n) {
+  border: 2px solid #E6E6E6;
 }
 
 .catalog-list {
@@ -683,9 +770,15 @@ body {
   margin-right: 8px;
 }
 
-.select-control {
+.select-control-number {
   width: 160px;
   margin: 0 auto;
+}
+
+.text-number {
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .pagination-current {
