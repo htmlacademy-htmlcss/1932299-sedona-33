@@ -101,12 +101,17 @@ body {
 }
 
 .navigation-favorites-likes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 20px;
   height: 20px;
   left: 24px;
-  top: 15px;
+  bottom: 15px;
+  font-size: 10px;
   background-color: #7DB54F;
+  color: #FFFFFF;
   border-radius: 10px;
   z-index: 1;
 }
@@ -114,6 +119,7 @@ body {
 .navigation-maps {
   display: block;
   margin: 0;
+  margin-left: 20px;
   padding: 10px;
   box-sizing: border-box;
   width: 160px;
@@ -431,20 +437,46 @@ body {
   display: block;
   font: inherit;
   border: none;
-  width: 600px;
-  height: 60px;
+  width: 555px;
+  padding: 20px 22px 19px 22px;
   border-radius: 10px 0px 0px 10px;
   background-color: #F2F2F2;
+}
+
+.mailing-list-form .field:hover {
+  background-color: #E6E6E6;
+}
+
+.mailing-list-form .field:focus {
+  outline: #83B3D3;
+}
+
+.mailing-list-form .field:invalid {
+  outline: #FF5757;
 }
 
 .mailing-list-button {
   width: 200px;
   height: 60px;
+  border: none;
+  font: inherit;
   background-color: #83B3D3;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   border-radius: 0px 10px 10px 0px;
+}
+
+.mailing-list-button:hover {
+  background-color: #68A2CA;
+}
+
+.mailing-list-button:focus {
+  outline: #756257;
+}
+
+.mailing-list-button:active {
+  outline: #ffffff;
 }
 
 .page-footer {
