@@ -101,12 +101,17 @@ body {
 }
 
 .navigation-favorites-likes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 20px;
   height: 20px;
   left: 24px;
-  top: 15px;
+  bottom: 15px;
+  font-size: 10px;
   background-color: #7DB54F;
+  color: #FFFFFF;
   border-radius: 10px;
   z-index: 1;
 }
@@ -114,6 +119,7 @@ body {
 .navigation-maps {
   display: block;
   margin: 0;
+  margin-left: 20px;
   padding: 10px;
   box-sizing: border-box;
   width: 160px;
@@ -431,20 +437,46 @@ body {
   display: block;
   font: inherit;
   border: none;
-  width: 600px;
-  height: 60px;
+  width: 555px;
+  padding: 20px 22px 19px 22px;
   border-radius: 10px 0px 0px 10px;
   background-color: #F2F2F2;
+}
+
+.mailing-list-form .field:hover {
+  background-color: #E6E6E6;
+}
+
+.mailing-list-form .field:focus {
+  outline: #83B3D3;
+}
+
+.mailing-list-form .field:invalid {
+  outline: #FF5757;
 }
 
 .mailing-list-button {
   width: 200px;
   height: 60px;
+  border: none;
+  font: inherit;
   background-color: #83B3D3;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   border-radius: 0px 10px 10px 0px;
+}
+
+.mailing-list-button:hover {
+  background-color: #68A2CA;
+}
+
+.mailing-list-button:focus {
+  outline: #756257;
+}
+
+.mailing-list-button:active {
+  outline: #ffffff;
 }
 
 .page-footer {
@@ -532,6 +564,7 @@ body {
   font-weight: 400;
   font-size: 60px;
   line-height: 78px;
+  color: #ffffff;
 }
 
 .breadcrumbs-item {
@@ -554,6 +587,92 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+  border: none;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  align-items: center;
+}
+
+.catalog-filter-label {
+  position: absolute;
+  width: 287px;
+  height: 48px;
+  box-sizing: border-box;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+}
+
+.range-input {
+  position: relative;
+  display: block;
+  font: inherit;
+  text-align: left;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.range-scale {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.range-bar {
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+  right: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.buttons-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: 81px;
+  align-content: center;
+}
+
+.button-apply {
+  width: 160px;
+  margin-bottom: 20px;
+  padding: 14px;
+  align-content: center;
+  text-transform: uppercase;
+  background-color: #83B3D3;
+  color: #ffffff;
+}
+
+.button-reset {
+  width: 160px;
+  margin: 0;
+  padding: 14px;
+  align-content: center;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.catalog-filter-infastructure {
+  margin: 0;
+  border: none;
 }
 
 .infrastructure-name {
@@ -565,6 +684,14 @@ body {
 
 .infrastructure-chekbox-list {
   list-style: none;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
 }
 
 .type-housing-list {
@@ -676,6 +803,7 @@ body {
   font-size: 24px;
   line-height: 31px;
   color: #000000;
+  text-decoration: none;
 }
 
 .hotel-card-price {
@@ -687,20 +815,43 @@ body {
   color: #333333;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
 .button-more {
-  display: block;
   margin: 0;
   padding: 0;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  border-radius: 4px;
   width: 133px;
   background-color: #756257;
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .button-favorites {
-  display: block;
   margin: 0;
   padding: 0;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  border-radius: 4px;
   width: 140px;
   background-color: #83B3D3;
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-three .button-favorites {
+  background-color: #7DB54F;
 }
 
 .button-load-more {
