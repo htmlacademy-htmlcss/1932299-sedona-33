@@ -244,7 +244,7 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 97px 90px 87px 90px;
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
 }
 
@@ -252,7 +252,7 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 97px 90px 87px 90px;
-  background: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
 }
 
@@ -260,7 +260,7 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 97px 90px 87px 90px;
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
 }
 
@@ -638,8 +638,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 16px;
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 1);
   border-radius: 4px;
 }
 
@@ -653,8 +652,9 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
 }
 
@@ -684,6 +684,7 @@ body {
 .catalog-filter-label {
   display: flex;
   border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .range-input {
@@ -692,7 +693,8 @@ body {
   font: inherit;
   text-align: left;
   background-color: transparent;
-  color: #FFFFFF;
+  color: #ffffff;
+  border: none;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -711,19 +713,24 @@ body {
 .button-apply {
   width: 160px;
   padding: 14px;
+  font: inherit;
   align-content: center;
   text-transform: uppercase;
   background-color: #83B3D3;
   color: #ffffff;
+  border-radius: 4px;
+  border: none;
 }
 
 .button-reset {
   width: 160px;
   margin: 0;
   padding: 14px;
+  font: inherit;
   align-content: center;
   background-color: transparent;
   color: #FFFFFF;
+  border: none;
 }
 
 .catalog-filter-list {
@@ -732,8 +739,17 @@ body {
   list-style: none;
 }
 
+.catalog-filter-list:nth(:last-of-type) {
+  margin-bottom: 0;
+}
+
+.catalog-filter-item {
+  margin-bottom: 13px;
+}
+
 .catalog-filter-group {
   margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -825,6 +841,7 @@ body {
 .select-control {
   width: 287px;
   height: 48px;
+  padding: 12px 20px 13px 20px;
   border: 2px solid #E6E6E6;
   box-sizing: border-box;
   background-image: url("../images/arrow.svg");
@@ -856,21 +873,18 @@ body {
   width: 48px;
   height: 48px;
   background-color: #ffffff;
-  border: 2px solid #000000;
+  border: 2px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 4px;
+
 }
 
-.card-grid-toggle svg {
-  fill: #000000;
-}
-
-.card-grid-toggle:nth-child(2n) {
-  border: 2px solid #E6E6E6;
+.card-grid-toggle-current {
+  border: 2px solid #000000;
 }
 
 .card-grid-toggle:nth-child(3n) {
-  border: 2px solid #E6E6E6;
+  margin-right: 0;
 }
 
 .catalog-list {
@@ -924,9 +938,8 @@ body {
 
 .button-more {
   margin: 0;
-  padding: 0;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
   border-radius: 4px;
   width: 133px;
   background-color: #756257;
@@ -935,13 +948,13 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border: none;
 }
 
 .button-favorites {
   margin: 0;
-  padding: 0;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
   border-radius: 4px;
   width: 140px;
   background-color: #83B3D3;
@@ -969,6 +982,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 4px;
+  border: none;
 }
 
 .pagination-container {
@@ -976,6 +990,7 @@ body {
   margin: 0;
   padding-top: 30px;
   padding-bottom: 73px;
+  align-items: center;
   list-style: none;
 }
 
@@ -1007,13 +1022,20 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-left: 299px;
+  margin-left: auto;
   width: 386px;
   padding-top: 3px;
   padding-bottom: 4px;
 }
 
+.text-number {
+  margin: 0;
+  padding-top: 16px;
+  padding-right: 51px;
+}
+
 .select-control-number {
+  padding: 16px;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
@@ -1033,12 +1055,6 @@ body {
 .select-control-number {
   width: 160px;
   margin: 0 auto;
-}
-
-.text-number {
-  margin: 0;
-  margin-top: 16px;
-  margin-bottom: 16px;
 }
 
 .pagination-current {
