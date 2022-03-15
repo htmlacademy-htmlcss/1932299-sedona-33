@@ -65,9 +65,9 @@
         <section class="catalog">
           <h2 class="visually-hidden">Фильтры.</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="catalog-filter-infastructure">
-              <legend class="infrastructure-name">Инфраструктура</legend>
-              <ul class="infrastructure-chekbox-list">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура</legend>
+              <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="swinning-pool" checked />
@@ -97,9 +97,9 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter type-housing">
-              <legend class="type-housing-name">Тип жилья</legend>
-              <ul class="type-housing-list">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Тип жилья</legend>
+              <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="type" value="hotel" checked />
@@ -129,8 +129,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter field-price">
-              <legend class="price-range">Стоимость,₽:</legend>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость,₽:</legend>
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label"></label>
                 <input class="range-input" id="range-field" type="number" value="0" name="min-price">от
@@ -138,7 +138,7 @@
                 <input class="range-input" id="range-field" type="number" value="9000" name="max-price">до
               </div>
               <div class="range-scale">
-                <div class="range-bar" style="left: 20px; width: 227px">
+                <div class="range-bar" style="left: 0px; width: 227px">
                   <button class="range-toggle toggle-min">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
