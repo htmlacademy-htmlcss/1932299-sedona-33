@@ -65,6 +65,7 @@
           <h2 class="visually-hidden">Фильтры.</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="catalog-filter-group">
+              <div class="infastructure">
               <legend class="catalog-filter-title">Инфраструктура</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -95,8 +96,10 @@
                   </label>
                 </li>
               </ul>
+            </div>
             </fieldset>
             <fieldset class="catalog-filter-group">
+              <div class="housing-type">
               <legend class="catalog-filter-title">Тип жилья</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -127,15 +130,16 @@
                   </label>
                 </li>
               </ul>
+            </div>
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость,₽:</legend>
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label" for="range-field-min"></label>
-                <input class="range-input" placeholder="от" id="range-field-from" type="number" value="0"
+                <input class="range-input" placeholder="от" id="range-field-min" type="number" value="0"
                   name="min-price">
                 <label class="catalog-filter-label" for="range-field-max"></label>
-                <input class="range-input" placeholder="до" id="range-field-before" type="number" value="9000"
+                <input class="range-input" placeholder="до" id="range-field-max" type="number" value="9000"
                   name="max-price">
               </div>
               <div class="range-scale">
@@ -149,8 +153,8 @@
                 </div>
             </fieldset>
             <div class="buttons-catalog">
-              <input class="button-apply" button type="submit" value="Применить">
-              <input class="button-reset" type="reset" value="Сбросить">
+              <input class="apply" button type="submit" value="Применить">
+              <input class="reset"  type="reset" value="Сбросить">
             </div>
           </form>
         </section>
@@ -214,7 +218,7 @@
               <a class="button-favorites" href="#">в избранное</a>
             </div>
             <span class="visually-hidden">4 звезды.</span>
-            <span class="visually-hidden">Рейтинг:8,5.</span>
+            <p class="rating">Рейтинг:8,5.</p>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="">
@@ -230,7 +234,7 @@
               <a class="button-favorites" href="#">в избранное</a>
             </div>
             <span class="visually-hidden">3 звезды.</span>
-            <span class="visually-hidden">Рейтинг:8,9.</span>
+            <p class="rating">Рейтинг:8,9.</p>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="">
@@ -246,7 +250,7 @@
               <a class="button-favorites" href="#">в избранном</a>
             </div>
             <span class="visually-hidden">2 звезды.</span>
-            <span class="visually-hidden">Рейтинг:9,2.</span>
+            <p class="rating">Рейтинг:9,2.</p>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="">
@@ -262,7 +266,7 @@
               <a class="button-favorites" href="#">в избранное</a>
             </div>
             <span class="visually-hidden">2 звезды</span>
-            <span class="visually-hidden">Рейтинг:9,2</span>
+            <p class="rating">Рейтинг:9,2</p>
           </li>
         </ul>
         <button class="button-load-more" type="submit">Загрузить ещё</button>
