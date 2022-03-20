@@ -154,7 +154,8 @@ body {
 }
 
 .navigation-maps:focus-visible {
-  outline: 3px solid #83B3D3;
+  box-shadow: 0px 0px 0px 3px #83B3D3;
+  outline: none;
 }
 
 .navigation-maps:hover {
@@ -204,7 +205,8 @@ body {
   position: relative;
   background-image: url("../images/index-background.jpg");
   background-size: 100% 100%;
-  background-repeat: no-repeat;;
+  background-repeat: no-repeat;
+  ;
   padding-top: 51px;
   padding-bottom: 57px;
 }
@@ -417,7 +419,8 @@ body {
 
 .appointment :focus-visible {
   background-color: #615048;
-  outline: 3px solid #83B3D3;
+  box-shadow: 0px 0px 0px 3px #83B3D3;
+  outline: none;
 }
 
 .appointment :active {
@@ -515,11 +518,13 @@ body {
 
 .field:focus-visible {
   background-color: #E6E6E6;
-  outline: #83B3D3;
+  box-shadow: 0px 0px 0px 3px #83B3D3;
+  outline: none;
 }
 
 .mailing-list-form:invalid {
-  outline: #FF5757;
+  box-shadow: 0px 0px 0px 3px #FF5757;
+  outline: none;
 }
 
 .mailing-list-button {
@@ -540,7 +545,8 @@ body {
 
 .mailing-list-button:focus-visible {
   background-color: #68A2CA;
-  outline: 3px solid #756257;
+  box-shadow: 0px 0px 0px 3px #756257;
+  outline: none;
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -569,8 +575,9 @@ body {
 
 .footer-social-link:focus-visible {
   background-color: #68A2CA;
-  outline: 3px solid #83B3D3;
   border-radius: 10px;
+  box-shadow: 0px 0px 0px 3px #83B3D3;
+  outline: none;
 }
 
 .footer-social-link:active {
@@ -604,6 +611,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  padding: 12px;
 }
 
 .page-footer-phone-link:hover {
@@ -611,9 +619,10 @@ body {
 }
 
 .page-footer-phone-link:focus-visible {
-  border: 3px solid #83B3D3;
+  box-shadow: 0px 0px 0px 3px #83B3D3;
   color: #756257;
   border-radius: 10px;
+  outline: none;
 }
 
 .page-footer-phone-link:active {
@@ -623,6 +632,7 @@ body {
 .page-footer-logo {
   margin-left: auto;
   width: 115px;
+  padding: 12px;
 }
 
 .page-footer-logo:hover {
@@ -630,9 +640,11 @@ body {
 }
 
 .page-footer-logo:focus-visible {
-  border: 3px solid #83B3D3;
+  box-shadow: 0px 0px 0px 3px #83B3D3;
   color: #756257;
   border-radius: 10px;
+  border: transparent;
+  outline: none;
 }
 
 .page-footer-logo:active {
@@ -646,7 +658,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(242, 242, 242, 1)
+  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal-container-close {
@@ -658,6 +670,7 @@ body {
   margin: auto;
   padding: 40px;
   background-color: #ffffff;
+  border-radius: 30px;
 }
 
 .modal-auth {
@@ -667,16 +680,31 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
-  width: 56px;
-  height: 44px;
-  background-color: #ffffff;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  background-color: #F2F2F2;
   border: none;
   background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  border-radius: 50%;
+}
+
+.modal-title {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .body {
@@ -745,8 +773,9 @@ body {
   width: 5px;
   height: 8px;
   top: 3px;
-  right: -3px;
-  background-image:url("../images/right-arrow.svg");
+  right: 0px;
+  background-image: url("../images/right-arrow.svg");
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs-link {
@@ -763,6 +792,7 @@ body {
   background-repeat: no-repeat;
   display: block;
   content: "";
+  padding-right: 8px;
   top: 0;
   right: 0;
   width: 12px;
@@ -774,7 +804,8 @@ body {
 }
 
 .breadcrumbs-link:focus-visible {
-  outline: 3px solid #83B3D3;
+  box-shadow: 0px 0px 0px 3px #83B3D3;
+  outline: none;
   border-radius: 4px;
   color: #FFFFFF;
 }
@@ -914,7 +945,8 @@ body {
 
 .apply:focus-visible {
   background-color: #68A2CA;
-  outline: 3px solid #FFFFFF;
+  box-shadow: 0px 0px 0px 3px #FFFFFF;
+  outline: none;
   border-radius: 4px;
   color: #FFFFFF;
 }
@@ -928,7 +960,7 @@ body {
 .reset {
   width: 100px;
   margin: 0;
-  padding: 0;
+  padding: 5px;
   font: inherit;
   align-content: center;
   background-color: transparent;
@@ -941,7 +973,8 @@ body {
 }
 
 .reset:focus-visible {
-  outline: 3px solid #83B3D3;
+  box-shadow: 0px 0px 0px 3px #83B3D3;
+  outline: none;
   border-radius: 4px;
   color: #FFFFFF;
 }
@@ -1086,17 +1119,20 @@ body {
 }
 
 .select-control:hover {
-  outline: 2px solid #83B3D3;
+  box-shadow: 0px 0px 0px 2px #83B3D3;
+  outline: none;
   border-radius: 4px;
 }
 
 .select-control:focus-visible {
-  outline: 2px solid #83B3D3;
+  box-shadow: 0px 0px 0px 2px #83B3D3;
+  outline: none;
   border-radius: 4px;
 }
 
 .select-control:active {
-  outline: 2px solid #E6E6E6;
+  box-shadow: 0px 0px 0px 2px #E6E6E6;
+  outline: none;
   border-radius: 4px;
 }
 
@@ -1139,12 +1175,14 @@ body {
 }
 
 .card-grid-toggle:hover {
-  outline: 2px solid #83B3D3;
+  box-shadow: 0px 0px 0px 2px #83B3D3;
+  outline: none;
   border-radius: 4px;
 }
 
 .card-grid-toggle:focus-visible {
-  outline: 2px solid #83B3D3;
+  box-shadow: 0px 0px 0px 2px #83B3D3;
+  outline: none;
   border-radius: 4px;
 }
 
@@ -1173,7 +1211,8 @@ body {
 }
 
 .hotel-card-image:focus-visible {
-  outline: 3px solid #83B3D3;
+  box-shadow: 0px 0px 0px 3px #83B3D3;
+  outline: none;
 }
 
 .hotel-card-image:active {
@@ -1182,7 +1221,6 @@ body {
 
 .hotel-card-image {
   margin: 0;
-  margin-bottom: 16px;
 }
 
 .hotel-card-title {
@@ -1240,7 +1278,8 @@ body {
 
 .button-more:focus-visible {
   background-color: #615048;
-  outline: 3px solid #83B3D3;
+  box-shadow: 0px 0px 0px 3px #83B3D3;
+  outline: none;
   border-radius: 4px;
 }
 
@@ -1269,7 +1308,8 @@ body {
 
 .button-favorites:focus-visible {
   background-color: #68A2CA;
-  outline: 3px solid #756257;
+  box-shadow: 0px 0px 0px 3px #756257;
+  outline: none;
   border-radius: 4px;
 }
 
@@ -1303,7 +1343,7 @@ body {
   height: 17px;
   background-image: url("../images/star-1.svg");
   background-repeat: space;
-  background-size: 19px 18px 17px 17px;
+  background-size: 18px 18px;
 }
 
 .rating-stars-1 {
@@ -1400,8 +1440,8 @@ body {
 
 .text-number {
   margin: 0;
-  padding-top: 16px;
-  padding-right: 51px;
+  margin-top: 16px;
+  margin-right: 51px;
 }
 
 .select-control-number {

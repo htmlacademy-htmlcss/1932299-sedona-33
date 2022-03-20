@@ -166,9 +166,29 @@
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне
-          </h2>
+        <section class="check-register-form">
+          <section class="dates">
+            <form class="modal-form" action="" method="post">
+              <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+              <label class="modal-label-check-in" for="check-in">Дата заезда:</label>
+              <div class="check-in-wrapper">
+              <input class="user-field-check-in" type="text" id="check-in" name="check-in" placeholder="27 апреля 2020" required>
+            </div>
+            <label class="modal-label-check-out" for="check-out">Дата выезда:</label>
+              <div class="check-out-wrapper">
+              <input class="user-field-check-out" type="text" id="check-in" name="check-out" placeholder="1 сентября 2021" required>
+              </div>
+            <label class="modal-form-number" for="number-of-adults">Взрослые:</label>
+              <div class="">
+              <input class="field-adults" type="text" id="number-of-adults" name="number-of-adults" placeholder="1">
+              </div>
+              <label class="modal-form-number" for="number-of-children">Дети:</label>
+                <div class="field-group appointment-form-number">
+                <input class="field-children" type="text" id="number-of-children" name="number-of-children" placeholder="1">
+              </div>
+              </form>
+          </section>
         </section>
       </div>
     </div>
