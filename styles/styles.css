@@ -22,6 +22,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  min-width: 100%;
   height: 100%;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -139,7 +140,7 @@ body {
   z-index: 1;
 }
 
-.navigation-favorites-likes:active {
+.navigation-favorites:active .navigation-favorites-likes {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -245,7 +246,6 @@ body {
   width: 700px;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 400;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
@@ -458,7 +458,6 @@ body {
 
 .appointment-dates {
   margin: 0 auto;
-  width: 700px;
   margin-bottom: 46px;
   text-align: center;
 }
@@ -509,13 +508,13 @@ body {
 .field {
   display: block;
   font: inherit;
-  border: none;
   width: 555px;
   height: 60px;
   box-sizing: border-box;
   padding: 20px 22px 19px 22px;
   border-radius: 10px 0px 0px 10px;
   background-color: #F2F2F2;
+  border: 2px solid transparent;
 }
 
 .field:hover {
@@ -528,9 +527,8 @@ body {
   outline: none;
 }
 
-.field-error:invalid {
-  box-shadow: 0px 0px 0px 3px #FF5757;
-  outline: none;
+.field-error {
+  border-color: #FF5757;
 }
 
 .mailing-list-button {
@@ -641,13 +639,19 @@ body {
   margin-left: auto;
   width: 115px;
   padding: 12px;
+  box-sizing: border-box;
+  outline: none;
 }
 
-.page-footer-logo:hover {
+.footer-logo {
+  padding: 12px;
+}
+
+.page-footer-logo:hover svg {
   fill: #756257;
 }
 
-.page-footer-logo:focus-visible {
+.page-footer-logo:focus-visible svg {
   fill: #756257;
   box-shadow: 0px 0px 0px 3px #83B3D3;
   border-radius: 10px;
@@ -712,6 +716,10 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+}
+
+.modal-form {
+  display: block;
 }
 
 .body {
@@ -852,6 +860,7 @@ body {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .toggle-min {
@@ -862,6 +871,18 @@ body {
 .toggle-max {
   top: -8px;
   right: -2px;
+}
+
+.range-toggle:focus-visible {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 0px 3px #83B3D3;
+  outline: none;
+}
+
+.range-toggle:active {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 0px 2px #83B3D3;
+  outline: none;
 }
 
 .range-wrapper-inputs {
@@ -913,8 +934,8 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
--webkit-appearance: none;
-margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .range-input-min {
@@ -1078,24 +1099,38 @@ margin: 0;
   transform: rotate(-45deg);
 }
 
-.control-input ~ .control-mark:hover {
+.control-input:hover~.control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
 }
 
-.control-input ~ .control-mark:focus-visible {
+.control-input:focus-visible~.control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 0px 0px 2px #83B3D3;
   border-radius: 4px;
   outline: none;
-
-  border-radius: 4px;
 }
 
-.control-input ~ .control-mark:active {
+.control-input:active~.control-mark {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
+
+.control-input-checkbox:focus-visible~.control-mark {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 0px 2px #83B3D3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.control-input-checkbox:hover~.control-mark {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.control-input-checkbox:active~.control-mark {
+  background-color: rgba(255, 255, 255, 1);
+}
+
 
 .control-mark {
   position: absolute;
@@ -1373,7 +1408,7 @@ margin: 0;
 }
 
 .button-three .button-favorites {
-  box-shadow: none;
+  border: none;
   border: 1px solid transparent;
   background-color: #7DB54F;
 }
