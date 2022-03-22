@@ -186,40 +186,109 @@
         </svg>
       </a>
     </footer>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        </section>
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <section class="check-register-form">
-          <section class="dates">
-            <form class="modal-form" action="" method="post">
-              <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-              <label class="modal-label-check-in" for="check-in">Дата заезда:</label>
-              <div class="check-in-wrapper">
-                <input class="user-field-check-in" type="text" id="check-in" name="check-in"
-                  placeholder="27 апреля 2020" required>
-              </div>
-              <label class="modal-label-check-out" for="check-out">Дата выезда:</label>
-              <div class="check-out-wrapper">
-                <input class="user-field-check-out" type="text" id="check-in" name="check-out"
-                  placeholder="1 сентября 2021" required>
-              </div>
-              <label class="modal-form-number" for="number-of-adults">Взрослые:</label>
-              <div class="">
-                <input class="field-adults" type="text" id="number-of-adults" name="number-of-adults" placeholder="1">
-              </div>
-              <label class="modal-form-number" for="number-of-children">Дети:</label>
-              <div class="field-group appointment-form-number">
-                <input class="field-children" type="text" id="number-of-children" name="number-of-children"
-                  placeholder="1">
-              </div>
-              <button class="modal-button-search" type="submit">Найти</button>
-            </form>
-          </section>
-        </section>
+        <form class="appointment-form-auth" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="arrival-date">
+            <label for="appointment-date">Дата заезда:</label>
+            <input class="dates" type="text" name="appointment-date" id="appointment-date" placeholder="27 апреля 2020"
+              aria-describedby="appointment-date-warning">
+            <svg class="calendar" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity=".3" fill="#000">
+                <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
+                <path
+                  d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" />
+                <path
+                  d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+              </g>
+            </svg>
+            <span class="comments comments-error" id="appointment-date-warning">Мы не можем отправить вас в
+              прошлое.
+            </span>
+          </p>
+          <p class="arrival-date">
+            <label for="end-date">Дата выезда:</label>
+            <input class="dates" type="text" name="appointment-date" id="end-date" value="1 сентября 2021"
+              aria-describedby="appointment-date-warning">
+            <svg class="calendar" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity=".3" fill="#000">
+                <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
+                <path
+                  d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" />
+                <path
+                  d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+              </g>
+            </svg>
+            <span class="comments" id="end-date-warning">На эти даты есть свободные номера. Пока есть.</span>
+          </p>
+          <div class="people">
+            <div class="people-adults">
+              <p> <label for="appointment-date-adults">Взрослые:</label></p>
+            </div>
+            <div class="people-child">
+              <input class="number-of-people" type="text" name="appointment-date" id="appointment-date" value="2">
+              <button class="button-minus modal-action" type="button">
+                <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                  <title id="minus">Минус</title>
+                </svg>
+              </button>
+              <button class="button-plus modal-action" type="button">
+                <svg class="plus" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3" />
+                  <title id="plus">Плюс</title>
+                </svg>
+              </button>
+            </div>
+            <div class="people-child">
+              <label for="appointment-date">Дети: </label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <svg width="1" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#a)" fill="#fff">
+                      <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h1v9H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <span class="tooltip-text" class="tooltip-text" role="tooltip">Укажите количество детей, которые
+                  будут с вами, возраст которых от 6 до 18 лет. Дети
+                  до 6 лет размещаются бесплатно.
+                </span>
+              </span>
+            </div>
+            <div class="number-child">
+              <input class="number-of-people" type="text" name="appointment-date" id="appointment-date" value="1">
+              <button class="button-minus modal-action" type="button">
+                <svg class="minus" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" />
+                  <title id="minus">Минус</title></svg>
+              </button>
+              <button class="button-plus modal-action" type="button"> <svg width="13" height="13" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3" />
+                  <title id="plus">Плюс</title>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="button-modal" type="submit">Найти</button>
+        </form>
       </div>
     </div>
+  </form>
+  </section>
+  </div>
   </div>
 </body>
 
