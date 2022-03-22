@@ -209,6 +209,7 @@ body {
 
 .intro {
   position: relative;
+  background-color: #89B7D5;
   background-image: url("../images/index-background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -465,6 +466,7 @@ body {
 .mailing-list {
   display: block;
   padding: 94px 20px 94px 20px;
+  background-color: #89B7D5;
   background-image: url("../images/background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -617,7 +619,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  padding: 12px;
+  padding: 18px;
 }
 
 .page-footer-phone-link:hover {
@@ -637,14 +639,13 @@ body {
 
 .page-footer-logo {
   margin-left: auto;
-  width: 115px;
-  padding: 12px;
+  width: 124px;
   box-sizing: border-box;
   outline: none;
 }
 
 .footer-logo {
-  padding: 12px;
+  padding: 18px;
 }
 
 .page-footer-logo:hover svg {
@@ -773,8 +774,6 @@ position: absolute;
 right: 19px;
 }
 
-
-
 .dates:hover {
   background-color: #e6e6e6;
 }
@@ -824,14 +823,16 @@ right: 19px;
 }
 .people {
   display: flex;
-  gap: 73px 56px;
   align-items: center;
 }
 .people-adults {
   margin: 0;
+  margin-right: 73px;
 }
 .people-child{
   position: relative;
+  margin: 0;
+  margin-right: 51px;
 }
 .number-child{
   position: relative;
@@ -983,6 +984,7 @@ right: 19px;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 35px 72px 83px 71px;
+  background-color: #89B7D5;
   background-image: url("../images/catalog-background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -1194,8 +1196,10 @@ input[type=number] {
 }
 
 .range-input:focus-visible {
+  position: relative;
   box-shadow: 0px 0px 0px 3px #83B3D3, inset 0px 0px 0px 3px #83B3D3;
   outline: none;
+  z-index: 1;
 }
 
 .range-input:active {
