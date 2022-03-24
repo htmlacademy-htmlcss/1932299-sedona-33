@@ -490,19 +490,9 @@ body {
   color: #ffffff;
 }
 
-.mailing-list-title-inner {
-  font-weight: 400;
-  margin: 0 auto;
-  margin-bottom: 27px;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .mailing-information {
   margin: 0 auto;
-  margin-bottom: 46px;
+  margin-bottom: 49px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -523,7 +513,7 @@ body {
   width: 600px;
   height: 60px;
   box-sizing: border-box;
-  padding: 20px 19px 20px 10px;
+  padding: 20px 19px 20px 22px;
   border-radius: 10px 0px 0px 10px;
   background-color: #F2F2F2;
   border: 2px solid transparent;
@@ -544,8 +534,8 @@ body {
 }
 
 .mailing-list-button {
-  width: 180px;
-  padding: 19px 10px 18px 10px;
+  width: 200px;
+  padding: 17px 10px 17px 10px;
   border: none;
   font: inherit;
   font-size: 20px;
@@ -575,7 +565,7 @@ body {
 .page-footer {
   display: flex;
   margin: 0;
-  padding: 23px 72px 30px 72px;
+  padding: 28px 72px 30px 72px;
   align-items: center;
 }
 
@@ -1031,7 +1021,7 @@ svg.calendar {
 .intro-inner {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 35px 72px 83px 71px;
+  padding: 22px 72px 67px 71px;
   background-color: #89B7D5;
   background-image: url("../images/catalog-background.jpg");
   background-size: 100% 100%;
@@ -1041,6 +1031,7 @@ svg.calendar {
 .inner-header-title {
   margin: 0 auto;
   margin-bottom: 5px;
+  padding-top: 7px;
   font-weight: 400;
   font-size: 60px;
   line-height: 78px;
@@ -1052,13 +1043,13 @@ svg.calendar {
   align-items: center;
   margin: 0;
   padding: 0;
-  padding-bottom: 45px;
+  padding-bottom: 42px;
   list-style: none;
 }
 
 .breadcrumbs-item:not(:last-of-type) {
   position: relative;
-  padding-right: 15px;
+  padding-right: 9px;
   margin-right: 5px;
 }
 
@@ -1160,7 +1151,7 @@ svg.calendar {
 
 .toggle-max {
   top: -8px;
-  right: -2px;
+  right: -7px;
 }
 
 .range-toggle:focus-visible {
@@ -1342,11 +1333,11 @@ input[type=number] {
 }
 
 .catalog-filter-group:nth-child(1n) {
-  margin-right: 67px;
+  margin-right: 80px;
 }
 
 .catalog-filter-group:nth-child(2n) {
-  margin-right: 167px;
+  margin-right: 169px;
 }
 
 .catalog-filter-group:nth-child(3n) {
@@ -1473,6 +1464,9 @@ input[type=number] {
 
 .hotels-found {
   margin: 0px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
   text-transform: uppercase;
 }
 
@@ -1608,14 +1602,14 @@ input[type=number] {
 .hotel-card-title {
   margin: 0;
   margin-bottom: 16px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 31px;
   color: #000000;
   text-decoration: none;
 }
 
 .name-hotel {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
   margin: 0;
 }
 
@@ -1640,7 +1634,7 @@ input[type=number] {
 
 .button-more {
   margin: 0;
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
   border-radius: 4px;
   width: 133px;
@@ -1671,7 +1665,7 @@ input[type=number] {
 
 .button-favorites {
   margin: 0;
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
   border-radius: 4px;
   width: 140px;
@@ -1756,7 +1750,6 @@ input[type=number] {
   width: 40px;
 }
 
-
 .button-load-more {
   display: block;
   box-sizing: border-box;
@@ -1788,11 +1781,19 @@ input[type=number] {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.decorative-lines-button {
+  width: 1055px;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .pagination-container {
   display: flex;
   margin: 0;
   padding-top: 30px;
-  padding-bottom: 73px;
+  padding-bottom: 23px;
   align-items: center;
   list-style: none;
 }
@@ -1885,7 +1886,6 @@ input[type=number] {
 .pagination-item {
   display: flex;
   width: 55px;
-  margin-left: 8px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1906,13 +1906,27 @@ input[type=number] {
   display: flex;
   display: block;
   margin: 0 auto;
-  padding: 73px 20px 140px 20px;
+  padding: 50px 20px 140px 20px;
   align-items: center;
   background-color: #ffffff
+}
+
+
+.mailing-list-title-inner {
+  font-weight: 400;
+  margin: 0 auto;
+  margin-bottom: 46px;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .mailing-information-inner {
   margin: 0 auto;
   margin-bottom: 46px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
 }
