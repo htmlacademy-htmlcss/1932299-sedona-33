@@ -36,7 +36,7 @@ body {
 .img {
   max-width: 100%;
   object-fit: contain;
-  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -1556,7 +1556,7 @@ input[type=number] {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   list-style: none;
 }
 
@@ -1571,6 +1571,8 @@ input[type=number] {
 .hotel-card-link {
   margin: 0;
   margin-bottom: 16px;
+  width: 300px;
+  height: 206px;
 }
 
 .hotel-card-link:hover {
@@ -1750,7 +1752,7 @@ input[type=number] {
   box-sizing: border-box;
   margin: 0 auto;
   padding-top: 17px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   width: 620px;
   font-weight: 700;
   font-size: 20px;
@@ -1783,7 +1785,7 @@ input[type=number] {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 }
 
 .pagination-container {
@@ -1899,11 +1901,10 @@ input[type=number] {
 .mailing-list-inner {
   display: block;
   margin: 0 auto;
-  padding: 50px 20px 140px 20px;
+  padding: 50px 20px 138px 20px;
   align-items: center;
   background-color: #ffffff
 }
-
 
 .mailing-list-title-inner {
   font-weight: 400;
